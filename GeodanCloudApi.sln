@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeodanCloudApi", "GeodanCloudApi\GeodanCloudApi.csproj", "{88D18153-F50D-4CBA-A895-B2AE162E4C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{6DFB242E-F3C2-490B-A539-EBA6660EF0EC}"
+	ProjectSection(SolutionItems) = preProject
+		lib\RestSharp.MonoTouch.dll = lib\RestSharp.MonoTouch.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{8AA009B2-9120-4C57-90D8-CE7D247E5201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{88D18153-F50D-4CBA-A895-B2AE162E4C8F}.Release|x86.ActiveCfg = Release|Any CPU
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Debug|x86.ActiveCfg = Debug|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Debug|x86.Build.0 = Debug|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Release|Any CPU.ActiveCfg = Release|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Release|x86.ActiveCfg = Release|x86
+		{8AA009B2-9120-4C57-90D8-CE7D247E5201}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
