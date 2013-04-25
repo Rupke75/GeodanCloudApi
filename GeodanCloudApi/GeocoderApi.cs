@@ -11,7 +11,7 @@ namespace Geodan.Cloud.Api
     }
 
     public class GeocoderApi
-    {
+    {//
         public string BaseUrl = "http://geoserver.nl/geocoder/";
         public string UserId = "c59227fd4d433b6b90e985b78788a07d";
 
