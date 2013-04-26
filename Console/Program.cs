@@ -10,10 +10,13 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            var api = new GeocoderApi();
-            var results = api.GetSuggestions("parna");
+            var geocoderApi = new GeocoderApi();
+            var results = geocoderApi.GetSuggestions("parna");
 
-            api.GetLocations(Projection.Rd, results[0].Id);
+            geocoderApi.GetLocations(Projection.Rd, results[0].Id);
+
+            var regiosApi = new BevoegdGezagApi();
+            var bevoegGezag = regiosApi.GetBevoegdgezag(5.1234, 52.1234);
         }
     }
 }
