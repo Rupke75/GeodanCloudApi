@@ -13,12 +13,12 @@ namespace Geodan.Cloud.Api
     public class GeocoderApi
     {
         public string BaseUrl = "http://geoserver.nl/geocoder/";
-        public string UserId = "c59227fd4d433b6b90e985b78788a07d";
+        public string UserId = "fff10c80874d50b985b5a83cd7dde17e";
 
         public List<GeoSuggestion> GetSuggestions(string searchText)
         {
             var client = new RestClient {BaseUrl = BaseUrl};
-            var request = new RestRequest {Resource = "geosuggest.aspx?format=json&search={searchText}&uid={userId}"};
+            var request = new RestRequest {Resource = "geosuggest.aspx?format=json&search={searchText}"};
             request.AddParameter("searchText", searchText, ParameterType.UrlSegment);
             request.AddParameter("userId", UserId, ParameterType.UrlSegment);
             request.OnBeforeDeserialization = resp => { resp.ContentType = "application/json"; };

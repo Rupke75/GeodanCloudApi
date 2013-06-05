@@ -3,7 +3,7 @@ using Geodan.Cloud.Models;
 
 namespace Geodan.Cloud.Api.Model
 {
-    public class Bevoegdgezag
+    public class BevoegdGezag
     {
         public int Id { get; set; }
         public string Name { get; set; }

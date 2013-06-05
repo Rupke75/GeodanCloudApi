@@ -11,7 +11,7 @@ namespace Geodan.Cloud.Api
         public string BaseUrl = "http://services.geodan.nl/regios";
         public string UserId = "fff10c80874d50b985b5a83cd7dde17e";
 
-        public List<Bevoegdgezag> GetBevoegdgezag(double lon, double lat)
+        public List<BevoegdGezag> GetBevoegdgezag(double lon, double lat)
         {
             var client = new RestClient { BaseUrl = BaseUrl };
             var request = new RestRequest { Resource = "?lon={lon}&lat={lat}&uid={userId}" };
@@ -19,17 +19,17 @@ namespace Geodan.Cloud.Api
             request.AddParameter("lat", lat.ToString(CultureInfo.InvariantCulture), ParameterType.UrlSegment);
             request.AddParameter("userId", UserId, ParameterType.UrlSegment);
             request.OnBeforeDeserialization = resp => { resp.ContentType = "application/json"; };
-            return client.Execute<List<Bevoegdgezag>>(request).Data;
+            return client.Execute<List<BevoegdGezag>>(request).Data;
         }
 
-        public List<Bevoegdgezag> GetBevoegdgezag(string wktRd)
+        public List<BevoegdGezag> GetBevoegdgezag(string wktRd)
         {
             var client = new RestClient { BaseUrl = BaseUrl };
             var request = new RestRequest { Resource = "?wkt={wktRd}&uid={userId}" };
             request.AddParameter("wktRd", wktRd, ParameterType.UrlSegment);
             request.AddParameter("userId", UserId, ParameterType.UrlSegment);
             request.OnBeforeDeserialization = resp => { resp.ContentType = "application/json"; };
-            return client.Execute<List<Bevoegdgezag>>(request).Data;
+            return client.Execute<List<BevoegdGezag>>(request).Data;
         }
     }
 }
